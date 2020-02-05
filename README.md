@@ -799,7 +799,7 @@ http_backend typhoeus
 ```
 
 ### compression_level
-You can add gzip compression of output data. In this case `default_compression`, `best_compression` or `best speed` option should be chosen.
+You can add gzip compression of output data. In this case `default_compression`, `best_compression` or `best_speed` option should be chosen.
 By default there is no compression, default value for this option is `no_compression`
 ```
 compression_level best_compression
@@ -868,7 +868,7 @@ num_threads 1
 
 The value for option `buffer_chunk_limit` should not exceed value `http.max_content_length` in your Elasticsearch setup (by default it is 100mb).
 
-**Note**: If you use or evaluate Fluentd v0.14, you can use `<buffer>` directive to specify buffer configuration, too. In more detail, please refer to the [buffer configuration options for v0.14](https://docs.fluentd.org/v0.14/articles/buffer-plugin-overview#configuration-parameters)
+**Note**: If you use or evaluate Fluentd v0.14 and later, you can use `<buffer>` directive to specify buffer configuration, too. In more detail, please refer to the [buffer configuration options](https://docs.fluentd.org/configuration/buffer-section#buffering-parameters)
 
 **Note**: If you use `disable_retry_limit` in v0.12 or `retry_forever` in v0.14 or later, please be careful to consume memory inexhaustibly.
 
